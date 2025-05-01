@@ -1,5 +1,14 @@
 #!/usr/bin/env python3
 
+"""
+Non-working port of the "alasmconverter.cpp" from
+(c) 2002, Alexander Shabarshin http://www.shaos.ru and
+(c) 2013, Dmitry Mikhaltchenkov witchcraft2001@mail.ru
+
+original source at:
+https://zx-pk.ru/printthread.php?t=1356-konverter-iz-tasm-i-alasm-v-tekst.html&pp=20 
+"""
+
 from sys import argv
 
 tokens = [
