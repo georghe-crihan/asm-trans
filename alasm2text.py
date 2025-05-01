@@ -16,7 +16,7 @@ def get_file_trd(filedata_trd, file_number_trd):
     if file_number_trd > 127 or not filedata_trd[begin]:
         return None, None, None
     else:
-        file_name_trd = filedata_trd[begin + 0:begin + 8].decode().replace('\\', ' ').strip()
+        file_name_trd = filedata_trd[begin + 0:begin + 8].decode().replace("\\", " ").strip()
         if (31 < filedata_trd[begin + 9] < 128) and (31 < filedata_trd[begin + 10] < 128):
             file_ext_trd = filedata_trd[begin + 8:begin + 11].decode().strip()
         else:
@@ -67,7 +67,7 @@ def get_file_hobeta(filedata_hobeta, file_number_hobeta):
 
 
 def asm2text(databytes):
-    asm_name = databytes[0:8].decode().replace('/', ' ').strip()
+    asm_name = databytes[0:8].decode().replace("/", " ").strip()
     asm_code = ';Alasm filename: {0}.H\n'.format(asm_name).encode()
 
     mnemtkn = {
